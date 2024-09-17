@@ -41,6 +41,7 @@ function removeContent() {
   const footer = document.createElement("footer");
   const credit = document.createElement("p");
   credit.textContent = "Background ";
+  credit.classList.add("credit")
   credit.appendChild(creditForImg("background"));
   footer.appendChild(credit);
   content.insertAdjacentElement("afterend", footer);
