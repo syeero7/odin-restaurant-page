@@ -31,12 +31,9 @@ export default function createHomePage() {
 
   for (const d in hours) {
     const day = document.createElement("p");
-    const time = document.createElement("span");
-    time.classList.add("time");
 
-    day.textContent = d;
-    time.textContent = hours[d];
-    day.appendChild(time);
+    day.textContent = `${d} \u00A0\u00A0\u00A0 ${hours[d]}`;
+
     hoursContainer.appendChild(day);
   }
 
