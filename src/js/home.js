@@ -8,7 +8,8 @@ export default function createHomePage() {
     Friday: "8.00 AM - 9.30 PM",
     Saturday: "8.30 AM - 9.00 PM",
   };
-  const container = document.createElement("div");
+
+  const container = document.createDocumentFragment();
   const restaurantName = document.createElement("h1");
   const tagline = document.createElement("h2");
   const description = document.createElement("p");
