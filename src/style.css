@@ -22,13 +22,13 @@
   --ff-roboto: "roboto";
   --ff-alegreya: "alegreya";
 
-  --bg-color: hsla(81, 28%, 90%, 0.75);
   --black: #242423;
   --white: #fff;
-  --cream: hsla(32, 100%, 81%, 0.7);
+  --cream: hsla(47, 43%, 89%, 0.8);
   --red: hsla(359, 94%, 62%, 0.5);
   --orange: hsla(33, 94%, 55%, 0.5);
   --yellow: hsla(44, 88%, 66%, 0.5);
+  --bg-color: var(--cream);
   --bg-img: linear-gradient(to top, var(--red), var(--orange), var(--yellow));
   --active-btn: linear-gradient(to left, var(--orange), var(--red));
 
@@ -109,8 +109,9 @@ nav {
 nav > button {
   background-color: var(--bg-color);
   border: none;
-  font-weight: 700;
+  cursor: pointer;
   font: inherit;
+  font-weight: 500;
   padding: 0.4em 1.8em;
 }
 .active {
@@ -118,6 +119,7 @@ nav > button {
   border-radius: var(--border-radius);
   border: var(--border);
   text-shadow: 0 0 2px var(--white);
+  font-weight: 700;
 }
 
 /* ----HOME PAGE---- */
@@ -159,8 +161,11 @@ nav > button {
   width: 350px;
 }
 
-.dish-price {
+.dish-price,
+.dish-name {
   font-weight: 700;
+  font-family: var(--ff-alegreya);
+  font-size: 1.25em;
 }
 
 .dish-img {
@@ -170,10 +175,6 @@ nav > button {
   border-right: var(--border);
   height: 240px;
   width: 350px;
-}
-
-.dish-name {
-  font-family: var(--ff-alegreya);
 }
 
 .bruschetta {
