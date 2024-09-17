@@ -20,6 +20,7 @@ export default function createMenuPage() {
   };
 
   menuHeader.textContent = "Menu";
+  containerFrag.appendChild(menuHeader);
 
   for (const course in menu) {
     const courseHeader = document.createElement("h2");
