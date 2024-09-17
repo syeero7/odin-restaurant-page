@@ -10,7 +10,7 @@ const content = document.querySelector("#content");
   content.appendChild(homePage());
 })();
 
-document.querySelector("nav").addEventListener("click", generateContent);
+document.querySelector("nav").addEventListener("click", renderContent);
 
 function renderContent(e) {
   removeContent();
