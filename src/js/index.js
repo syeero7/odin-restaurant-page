@@ -10,12 +10,17 @@ const content = document.querySelector("#content");
   content.appendChild(homePage());
 })();
 
-document.querySelector("nav").addEventListener("click", renderContent);
+document
+  .querySelector("nav")
+  .addEventListener("click", renderContent, changeButtonBGColor);
 
 function renderContent(e) {
   removeContent();
 
   const target = e.target;
+
+  changeButtonBGColor(target);
+
   let pageContent;
   switch (target.id) {
     case "home":
@@ -41,8 +46,19 @@ function removeContent() {
   const footer = document.createElement("footer");
   const credit = document.createElement("p");
   credit.textContent = "Background ";
-  credit.classList.add("credit")
+  credit.classList.add("credit");
   credit.appendChild(creditForImg("background"));
   footer.appendChild(credit);
   content.insertAdjacentElement("afterend", footer);
 })();
+
+function changeButtonBGColor(target) {
+  const buttons = document.querySelectorAll("nav>button");
+  const id = target.id;
+  if (id === "home" || id === "menu" || id === "contact") {
+    buttons.forEach((button) => {
+      button.classList.remove("active");
+    });
+    target.classList.add("active");
+  }
+}
