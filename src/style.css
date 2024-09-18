@@ -19,8 +19,8 @@
 :root {
   --fs: clamp(1rem, 0.5rem + 1.5vh, 3rem);
   --fs-small: 0.8rem;
-  --ff-roboto: "roboto";
-  --ff-alegreya: "alegreya";
+  --ff-roboto: "roboto", sans-serif;
+  --ff-alegreya: "alegreya", serif;
 
   --black: #242423;
   --white: #fff;
