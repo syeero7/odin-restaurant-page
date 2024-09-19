@@ -1,11 +1,13 @@
 @font-face {
   font-family: "roboto";
   src: url(5a0a638d9f573a399b22.woff2);
+  font-display: swap;
 }
 
 @font-face {
   font-family: "alegreya";
   src: url(41c401834dd14ebd1f50.woff2);
+  font-display: swap;
 }
 
 *,
@@ -40,7 +42,7 @@
 body {
   align-items: center;
   background-color: var(--bg-color);
-  background-image: url(60bca44bf9b4bc09a72d.png);
+  background-image: url(0a512afcefac2c4b286b.svg);
   background-size: 12%;
   color: var(--font-color);
   display: flex;
@@ -179,36 +181,36 @@ nav > button {
 }
 
 .bruschetta {
-  background-image: url(ee889857eae04102f6da.jpg);
+  background-image: url(955a398f59719ea6ca47.webp);
 }
 
 .caprese-salad {
-  background-image: url(25178e22ee195376ab8a.jpg);
+  background-image: url(b24f11f5daff009964ab.webp);
 }
 
 .margherita-pizza {
-  background-image: url(e0531e8afe3d3b1046de.jpg);
+  background-image: url(548a5f25c7b340c86c22.webp);
 }
 
 .spaghetti-bolognese {
-  background-image: url(8f934eee50ed08ad0b92.jpg);
+  background-image: url(e64b01308be1739281d0.webp);
 }
 
 .fettuccine-alfredo {
-  background-image: url(de4b8900e4802d5a5bc9.jpg);
+  background-image: url(b9c12be6a8748d024459.webp);
 }
 .tiramisu {
-  background-image: url(8c4690ec69e6a776ad2f.jpg);
+  background-image: url(9be49842c2e0682c3e07.webp);
 }
 
 .gelato {
-  background-image: url(bf644315b62b2229e8dc.jpg);
+  background-image: url(6fbacd5c58a1373be733.webp);
 }
 
 /* ----CONTACT PAGE---- */
 
 .contact-page-img {
-  background-image: url(2cf21196f01af4efdb03.jpg);
+  background-image: url(03eb210052c8e71db5dc.webp);
   background-position: center;
   background-size: cover;
   border-radius: var(--border-radius);
