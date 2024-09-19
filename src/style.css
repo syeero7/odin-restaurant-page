@@ -42,7 +42,7 @@
 body {
   align-items: center;
   background-color: var(--bg-color);
-  background-image: url("./images/backgroud.png");
+  background-image: url("./images/backgroud.svg");
   background-size: 12%;
   color: var(--font-color);
   display: flex;
@@ -181,36 +181,36 @@ nav > button {
 }
 
 .bruschetta {
-  background-image: url("./images/bruschetta.jpg");
+  background-image: url("./images/bruschetta.webp");
 }
 
 .caprese-salad {
-  background-image: url("./images/caprese-salad.jpg");
+  background-image: url("./images/caprese-salad.webp");
 }
 
 .margherita-pizza {
-  background-image: url("./images/margherita-pizza.jpg");
+  background-image: url("./images/margherita-pizza.webp");
 }
 
 .spaghetti-bolognese {
-  background-image: url("./images/spaghetti.jpg");
+  background-image: url("./images/spaghetti.webp");
 }
 
 .fettuccine-alfredo {
-  background-image: url("./images/fettuccine-alfredo.jpg");
+  background-image: url("./images/fettuccine-alfredo.webp");
 }
 .tiramisu {
-  background-image: url("./images/tiramisu.jpg");
+  background-image: url("./images/tiramisu.webp");
 }
 
 .gelato {
-  background-image: url("./images/gelato.jpg");
+  background-image: url("./images/gelato.webp");
 }
 
 /* ----CONTACT PAGE---- */
 
 .contact-page-img {
-  background-image: url("./images/contact-page-img.jpg");
+  background-image: url("./images/contact-page-img.webp");
   background-position: center;
   background-size: cover;
   border-radius: var(--border-radius);
