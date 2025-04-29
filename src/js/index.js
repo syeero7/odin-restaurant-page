@@ -17,11 +17,9 @@ document
 function renderContent(e) {
   removeContent();
 
-  const target = e.target;
-
-  changeButtonBGColor(target);
-
+  const { target } = e;
   let pageContent;
+
   switch (target.id) {
     case "home":
       pageContent = homePage;
@@ -32,7 +30,11 @@ function renderContent(e) {
     case "contact":
       pageContent = contactPage;
       break;
+    default:
+      return;
   }
+
+  changeButtonBGColor(target);
   content.appendChild(pageContent());
 }
 
@@ -45,6 +47,7 @@ function removeContent() {
 (() => {
   const footer = document.createElement("footer");
   const credit = document.createElement("p");
+
   credit.textContent = "Background ";
   credit.classList.add("credit");
   credit.appendChild(creditForImg("background"));

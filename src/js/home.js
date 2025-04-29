@@ -31,8 +31,12 @@ export default function createHomePage() {
 
   for (const d in hours) {
     const day = document.createElement("p");
+    const span = document.createElement("span");
+    const span2 = document.createElement("span");
 
-    day.textContent = `${d} \u00A0\u00A0\u00A0 ${hours[d]}`;
+    span.textContent = d;
+    span2.textContent = hours[d];
+    day.append(span, span2);
 
     hoursContainer.appendChild(day);
   }
